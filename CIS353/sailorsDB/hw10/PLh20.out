@@ -1,0 +1,14 @@
+SQL> @PLh20.sql
+Enter the rate decrement: 55
+Enter the allowed min rate: 200
++++++ old row: 106 C#             red        225 27  32                         
++++++ Update rejected: The new rating would have been: 170                      
++++++ old row: 107 Bayside        white      330 32  85                         
++++++ update rejected: -2290...ORA-02290: check constraint (SMITHI.BIC4)        
+violated                                                                        
++++++ old row: 108 C++            blue       100 12  95                         
++++++ Update rejected: The new rating would have been: 45                       
+
+PL/SQL procedure successfully completed.
+
+SQL> SPOOL OFF

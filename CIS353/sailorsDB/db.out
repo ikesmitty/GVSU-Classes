@@ -1,0 +1,62 @@
+SQL> /*
+SQL> Homework: create DB
+SQL> Author: Isaac Smith
+SQL> */
+SQL> SELECT * FROM Sailors;
+
+       SID SNAME               RATING        AGE    TRAINEE                     
+---------- --------------- ---------- ---------- ----------                     
+        29 Mike                     1         33                                
+        85 Art                      3         25         29                     
+        95 Jane                     3         63                                
+
+SQL> SElECT * FROM Boats;
+
+       BID BNAME           COLOR            RATE     LENGTH  LOGKEEPER          
+---------- --------------- ---------- ---------- ---------- ----------          
+       101 Interlake       blue              350         30         95          
+       102 Interlake       red               275         23         22          
+       103 Clipper         green             160         15         85          
+       104 Marine          red               195         24         22          
+       105 Weekend Rx      white             500         43         31          
+       106 C#              red               300         27         32          
+       107 Bayside         white             350         32         85          
+       108 C++             blue              100         12         95          
+
+8 rows selected.
+
+SQL> SELECT * FROM Reservations;
+
+no rows selected
+
+SQL> SELECT * FROM LazySailors;
+
+       SID SNAME               RATING                                           
+---------- --------------- ----------                                           
+        95 Jane                     3                                           
+        29 Mike                     1                                           
+        85 Art                      3                                           
+
+SQL> SET AUTOCOMMIT ON;
+SQL> INSERT INTO Sailors VALUES (22, 'Dave', 6, 45.0, 95);
+
+1 row created.
+
+Commit complete.
+SQL> INSERT INTO Sailors VALUES (21, 'Jay', 6, 45.0, 99);
+
+1 row created.
+
+ERROR:
+ORA-02091: transaction rolled back 
+ORA-02291: integrity constraint (SMITHI.SIC2) violated - parent key not found 
+
+
+SQL> INSERT INTO Sailors VALUES (92, 'Popeye', 17, 45.0, 95);
+INSERT INTO Sailors VALUES (92, 'Popeye', 17, 45.0, 95)
+*
+ERROR at line 1:
+ORA-02290: check constraint (SMITHI.SIC3) violated 
+
+
+SQL> SET ECHO OFF

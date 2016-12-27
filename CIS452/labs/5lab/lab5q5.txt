@@ -1,0 +1,81 @@
+Script started on Thu 29 Sep 2016 10:56:05 AM EDT
+[?1034h[eos14:~/Documents/CIS452/labs/5lab]$ ipcs
+
+------ Message Queues --------
+key        msqid      owner      perms      used-bytes   messages    
+
+------ Shared Memory Segments --------
+key        shmid      owner      perms      bytes      nattch     status      
+0x00000000 96501760   aubreys    600        393216     2          dest         
+0x00000000 96600065   aubreys    600        524288     2          dest         
+0x00000000 96698370   aubreys    600        393216     2          dest         
+0x00000000 96731139   aubreys    600        393216     2          dest         
+0x00000000 96829444   aubreys    600        393216     2          dest         
+0x00000000 121438213  aubreys    600        524288     2          dest         
+0x00000000 97222662   aubreys    600        393216     2          dest         
+0x00000000 97320967   aubreys    600        524288     2          dest         
+0x00000000 97353736   aubreys    600        393216     2          dest         
+0x00000000 97484809   aubreys    600        524288     2          dest         
+0x00000000 97746954   aubreys    600        524288     2          dest         
+0x00000000 109740043  smithi     600        393216     2          dest         
+0x00000000 109838348  smithi     600        524288     2          dest         
+0x00000000 109936653  smithi     600        393216     2          dest         
+0x00000000 109969422  smithi     600        393216     2          dest         
+0x00000000 110067727  smithi     600        393216     2          dest         
+0x00000000 110231568  smithi     600        393216     2          dest         
+0x00000000 110985233  smithi     600        524288     2          dest         
+0x00000000 114819090  smithi     600        393216     2          dest         
+0x00000000 110657555  smithi     600        524288     2          dest         
+0x00000000 110690324  smithi     600        524288     2          dest         
+0x00000000 113049621  smithi     600        524288     2          dest         
+0x00000000 121307158  smithi     600        524288     2          dest         
+0x00000000 115114007  smithi     600        393216     2          dest         
+0x00000000 115310616  smithi     600        393216     2          dest         
+0x00000000 115539993  smithi     600        524288     2          dest         
+0x00000000 121536538  smithi     600        4096       0                       
+
+------ Semaphore Arrays --------
+key        semid      owner      perms      nsems     
+
+[eos14:~/Documents/CIS452/labs/5lab]$ ipcrm - m[K[K[K-m 121536538
+[eos14:~/Documents/CIS452/labs/5lab]$ ipcs
+
+------ Message Queues --------
+key        msqid      owner      perms      used-bytes   messages    
+
+------ Shared Memory Segments --------
+key        shmid      owner      perms      bytes      nattch     status      
+0x00000000 96501760   aubreys    600        393216     2          dest         
+0x00000000 96600065   aubreys    600        524288     2          dest         
+0x00000000 96698370   aubreys    600        393216     2          dest         
+0x00000000 96731139   aubreys    600        393216     2          dest         
+0x00000000 96829444   aubreys    600        393216     2          dest         
+0x00000000 121438213  aubreys    600        524288     2          dest         
+0x00000000 97222662   aubreys    600        393216     2          dest         
+0x00000000 97320967   aubreys    600        524288     2          dest         
+0x00000000 97353736   aubreys    600        393216     2          dest         
+0x00000000 97484809   aubreys    600        524288     2          dest         
+0x00000000 97746954   aubreys    600        524288     2          dest         
+0x00000000 109740043  smithi     600        393216     2          dest         
+0x00000000 109838348  smithi     600        524288     2          dest         
+0x00000000 109936653  smithi     600        393216     2          dest         
+0x00000000 109969422  smithi     600        393216     2          dest         
+0x00000000 110067727  smithi     600        393216     2          dest         
+0x00000000 110231568  smithi     600        393216     2          dest         
+0x00000000 110985233  smithi     600        524288     2          dest         
+0x00000000 114819090  smithi     600        393216     2          dest         
+0x00000000 110657555  smithi     600        524288     2          dest         
+0x00000000 110690324  smithi     600        524288     2          dest         
+0x00000000 113049621  smithi     600        524288     2          dest         
+0x00000000 121307158  smithi     600        524288     2          dest         
+0x00000000 115114007  smithi     600        393216     2          dest         
+0x00000000 115310616  smithi     600        393216     2          dest         
+0x00000000 115539993  smithi     600        524288     2          dest         
+
+------ Semaphore Arrays --------
+key        semid      owner      perms      nsems     
+
+[eos14:~/Documents/CIS452/labs/5lab]$ exit
+exit
+
+Script done on Thu 29 Sep 2016 10:56:31 AM EDT

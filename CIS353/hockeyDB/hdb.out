@@ -1,0 +1,763 @@
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Session altered.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Commit complete.
+
+
+SSN              AGE                                                                                                                                                                                    
+--------- ----------                                                                                                                                                                                    
+POSITION                                                                                                                                                                                                
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+NAME                                                                                                                                                                                                    
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+   PNUMBER                                                                                                                                                                                              
+----------                                                                                                                                                                                              
+TEAMNAME                                                                                                                                                                                                
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1423              37                                                                                                                                                                                    
+C                                                                                                                                                                                                       
+Pavel Datsyuk                                                                                                                                                                                           
+        13                                                                                                                                                                                              
+Red Wings                                                                                                                                                                                               
+                                                                                                                                                                                                        
+5673              34                                                                                                                                                                                    
+D                                                                                                                                                                                                       
+Niklas Kronwall                                                                                                                                                                                         
+        55                                                                                                                                                                                              
+Red Wings                                                                                                                                                                                               
+                                                                                                                                                                                                        
+9875              31                                                                                                                                                                                    
+G                                                                                                                                                                                                       
+Jimmy Howard                                                                                                                                                                                            
+        35                                                                                                                                                                                              
+Red Wings                                                                                                                                                                                               
+                                                                                                                                                                                                        
+1236              38                                                                                                                                                                                    
+D                                                                                                                                                                                                       
+Zdeno Chara                                                                                                                                                                                             
+        33                                                                                                                                                                                              
+Bruins                                                                                                                                                                                                  
+                                                                                                                                                                                                        
+7254              30                                                                                                                                                                                    
+RW                                                                                                                                                                                                      
+Loui Eriksson                                                                                                                                                                                           
+        21                                                                                                                                                                                              
+Bruins                                                                                                                                                                                                  
+                                                                                                                                                                                                        
+1726              28                                                                                                                                                                                    
+G                                                                                                                                                                                                       
+Tuukka Rask                                                                                                                                                                                             
+        40                                                                                                                                                                                              
+Bruins                                                                                                                                                                                                  
+                                                                                                                                                                                                        
+2745              26                                                                                                                                                                                    
+D                                                                                                                                                                                                       
+P.K. Subban                                                                                                                                                                                             
+        76                                                                                                                                                                                              
+Canadiens                                                                                                                                                                                               
+                                                                                                                                                                                                        
+8356              27                                                                                                                                                                                    
+LW                                                                                                                                                                                                      
+Max Pacioretty                                                                                                                                                                                          
+        67                                                                                                                                                                                              
+Canadiens                                                                                                                                                                                               
+                                                                                                                                                                                                        
+1935              28                                                                                                                                                                                    
+G                                                                                                                                                                                                       
+Carey Price                                                                                                                                                                                             
+        31                                                                                                                                                                                              
+Canadiens                                                                                                                                                                                               
+                                                                                                                                                                                                        
+4529              27                                                                                                                                                                                    
+LW                                                                                                                                                                                                      
+Carl Hagelin                                                                                                                                                                                            
+        62                                                                                                                                                                                              
+Rangers                                                                                                                                                                                                 
+                                                                                                                                                                                                        
+3333              31                                                                                                                                                                                    
+LW                                                                                                                                                                                                      
+Rick Nash                                                                                                                                                                                               
+        61                                                                                                                                                                                              
+Rangers                                                                                                                                                                                                 
+                                                                                                                                                                                                        
+8213              33                                                                                                                                                                                    
+G                                                                                                                                                                                                       
+Henrik Lundqvist                                                                                                                                                                                        
+        32                                                                                                                                                                                              
+Rangers                                                                                                                                                                                                 
+                                                                                                                                                                                                        
+9112              26                                                                                                                                                                                    
+LW                                                                                                                                                                                                      
+James Van Riemsdyk                                                                                                                                                                                      
+        21                                                                                                                                                                                              
+Maple Leafs                                                                                                                                                                                             
+                                                                                                                                                                                                        
+6533              30                                                                                                                                                                                    
+C                                                                                                                                                                                                       
+Dion Phaneuf                                                                                                                                                                                            
+         3                                                                                                                                                                                              
+Maple Leafs                                                                                                                                                                                             
+                                                                                                                                                                                                        
+2903              27                                                                                                                                                                                    
+G                                                                                                                                                                                                       
+James Reimer                                                                                                                                                                                            
+        35                                                                                                                                                                                              
+Maple Leafs                                                                                                                                                                                             
+                                                                                                                                                                                                        
+5681              27                                                                                                                                                                                    
+RW                                                                                                                                                                                                      
+Patrick Kane                                                                                                                                                                                            
+        88                                                                                                                                                                                              
+Blackhawks                                                                                                                                                                                              
+                                                                                                                                                                                                        
+8499              27                                                                                                                                                                                    
+C                                                                                                                                                                                                       
+Jonathan Toews                                                                                                                                                                                          
+        18                                                                                                                                                                                              
+Blackhawks                                                                                                                                                                                              
+                                                                                                                                                                                                        
+2235              30                                                                                                                                                                                    
+G                                                                                                                                                                                                       
+Corey Crawford                                                                                                                                                                                          
+        50                                                                                                                                                                                              
+Blackhawks                                                                                                                                                                                              
+                                                                                                                                                                                                        
+
+18 rows selected.
+
+
+CITY                                                                                                                                                                                                    
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+TNAME                                                                                                                                                                                                   
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+OWNER                                                                                                                                                                                                   
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+COACH                                                                                                                                                                                                   
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+GM                                                                                                                                                                                                      
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Detroit                                                                                                                                                                                                 
+Red Wings                                                                                                                                                                                               
+Mike Ilitch                                                                                                                                                                                             
+Jeff Blashill                                                                                                                                                                                           
+Ken Holland                                                                                                                                                                                             
+                                                                                                                                                                                                        
+Boston                                                                                                                                                                                                  
+Bruins                                                                                                                                                                                                  
+Jeremy Jacobs                                                                                                                                                                                           
+Claude Julien                                                                                                                                                                                           
+Don Sweeney                                                                                                                                                                                             
+                                                                                                                                                                                                        
+Montreal                                                                                                                                                                                                
+Canadiens                                                                                                                                                                                               
+Geoff Molson                                                                                                                                                                                            
+Michel Therrien                                                                                                                                                                                         
+Marc Bergevin                                                                                                                                                                                           
+                                                                                                                                                                                                        
+Toronto                                                                                                                                                                                                 
+Maple Leafs                                                                                                                                                                                             
+Larry Tanenbaum                                                                                                                                                                                         
+Mike Babcock                                                                                                                                                                                            
+Lou Lamoriello                                                                                                                                                                                          
+                                                                                                                                                                                                        
+New York                                                                                                                                                                                                
+Rangers                                                                                                                                                                                                 
+James Dolan                                                                                                                                                                                             
+Alain Vigneault                                                                                                                                                                                         
+Jeff Gorton                                                                                                                                                                                             
+                                                                                                                                                                                                        
+Chicago                                                                                                                                                                                                 
+Blackhawks                                                                                                                                                                                              
+Rocky Wirtz                                                                                                                                                                                             
+Joel Quenneville                                                                                                                                                                                        
+Stan Bowman                                                                                                                                                                                             
+                                                                                                                                                                                                        
+
+6 rows selected.
+
+
+CNAME                                                                                                                                                                                                   
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+COUNTRY                                                                                                                                                                                                 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Little Caesars Pizza                                                                                                                                                                                    
+United States                                                                                                                                                                                           
+                                                                                                                                                                                                        
+Samuel Adams Beer                                                                                                                                                                                       
+United States                                                                                                                                                                                           
+                                                                                                                                                                                                        
+Imperial Oil                                                                                                                                                                                            
+Canada                                                                                                                                                                                                  
+                                                                                                                                                                                                        
+Tim Hortons                                                                                                                                                                                             
+Canada                                                                                                                                                                                                  
+                                                                                                                                                                                                        
+JPMorgan Chase                                                                                                                                                                                          
+United States                                                                                                                                                                                           
+                                                                                                                                                                                                        
+Radisson Hotels                                                                                                                                                                                         
+United States                                                                                                                                                                                           
+                                                                                                                                                                                                        
+
+6 rows selected.
+
+
+  INJURYID                                                                                                                                                                                              
+----------                                                                                                                                                                                              
+INJURYTYPE                                                                                                                                                                                              
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+         1                                                                                                                                                                                              
+Sprain                                                                                                                                                                                                  
+                                                                                                                                                                                                        
+         2                                                                                                                                                                                              
+Break                                                                                                                                                                                                   
+                                                                                                                                                                                                        
+         3                                                                                                                                                                                              
+Strain                                                                                                                                                                                                  
+                                                                                                                                                                                                        
+         4                                                                                                                                                                                              
+Concussion                                                                                                                                                                                              
+                                                                                                                                                                                                        
+         5                                                                                                                                                                                              
+Muscle Tear                                                                                                                                                                                             
+                                                                                                                                                                                                        
+         6                                                                                                                                                                                              
+Laceration                                                                                                                                                                                              
+                                                                                                                                                                                                        
+         7                                                                                                                                                                                              
+DEATH                                                                                                                                                                                                   
+                                                                                                                                                                                                        
+
+7 rows selected.
+
+
+TNAME                                                                                                                                                                                                   
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+CNAME                                                                                                                                                                                                   
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ANNUALCONTRIBUTION                                                                                                                                                                                      
+------------------                                                                                                                                                                                      
+Red Wings                                                                                                                                                                                               
+Little Caesars Pizza                                                                                                                                                                                    
+             10000                                                                                                                                                                                      
+                                                                                                                                                                                                        
+Bruins                                                                                                                                                                                                  
+Samuel Adams Beer                                                                                                                                                                                       
+              5000                                                                                                                                                                                      
+                                                                                                                                                                                                        
+Canadiens                                                                                                                                                                                               
+Imperial Oil                                                                                                                                                                                            
+              4000                                                                                                                                                                                      
+                                                                                                                                                                                                        
+Maple Leafs                                                                                                                                                                                             
+Tim Hortons                                                                                                                                                                                             
+             15000                                                                                                                                                                                      
+                                                                                                                                                                                                        
+Blackhawks                                                                                                                                                                                              
+Radisson Hotels                                                                                                                                                                                         
+             12000                                                                                                                                                                                      
+                                                                                                                                                                                                        
+
+
+PSSN        INJURYID DATEINJURE GAMESMISSEDDUETOINJURY                                                                                                                                                  
+--------- ---------- ---------- ----------------------                                                                                                                                                  
+1423               1 2015-01-29                     20                                                                                                                                                  
+1236               3 2014-12-20                      9                                                                                                                                                  
+1726               2 2014-11-19                     50                                                                                                                                                  
+3333               4 2015-02-12                     13                                                                                                                                                  
+8499               5 2014-03-14                     42                                                                                                                                                  
+5681               7 2014-10-25                    100                                                                                                                                                  
+
+6 rows selected.
+
+
+ARENANAME                                                                                                                                                                                               
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  CAPACITY                                                                                                                                                                                              
+----------                                                                                                                                                                                              
+TNAME                                                                                                                                                                                                   
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Joe Louis Arena                                                                                                                                                                                         
+     20066                                                                                                                                                                                              
+Red Wings                                                                                                                                                                                               
+                                                                                                                                                                                                        
+TD Garden                                                                                                                                                                                               
+     17565                                                                                                                                                                                              
+Bruins                                                                                                                                                                                                  
+                                                                                                                                                                                                        
+Bell Centre                                                                                                                                                                                             
+     21273                                                                                                                                                                                              
+Canadiens                                                                                                                                                                                               
+                                                                                                                                                                                                        
+Air Canada Centre                                                                                                                                                                                       
+     19800                                                                                                                                                                                              
+Maple Leafs                                                                                                                                                                                             
+                                                                                                                                                                                                        
+Madison Square Garden                                                                                                                                                                                   
+     18200                                                                                                                                                                                              
+Rangers                                                                                                                                                                                                 
+                                                                                                                                                                                                        
+United Center                                                                                                                                                                                           
+     20500                                                                                                                                                                                              
+Blackhawks                                                                                                                                                                                              
+                                                                                                                                                                                                        
+
+6 rows selected.
+
+
+NAME                                                                                                                                                                                                    
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+TEAMNAME                                                                                                                                                                                                
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+CITY                                                                                                                                                                                                    
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+INJURYTYPE                                                                                                                                                                                              
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+DATEINJURE                                                                                                                                                                                              
+----------                                                                                                                                                                                              
+Pavel Datsyuk                                                                                                                                                                                           
+Red Wings                                                                                                                                                                                               
+Detroit                                                                                                                                                                                                 
+Sprain                                                                                                                                                                                                  
+2015-01-29                                                                                                                                                                                              
+                                                                                                                                                                                                        
+Tuukka Rask                                                                                                                                                                                             
+Bruins                                                                                                                                                                                                  
+Boston                                                                                                                                                                                                  
+Break                                                                                                                                                                                                   
+2014-11-19                                                                                                                                                                                              
+                                                                                                                                                                                                        
+Zdeno Chara                                                                                                                                                                                             
+Bruins                                                                                                                                                                                                  
+Boston                                                                                                                                                                                                  
+Strain                                                                                                                                                                                                  
+2014-12-20                                                                                                                                                                                              
+                                                                                                                                                                                                        
+Rick Nash                                                                                                                                                                                               
+Rangers                                                                                                                                                                                                 
+New York                                                                                                                                                                                                
+Concussion                                                                                                                                                                                              
+2015-02-12                                                                                                                                                                                              
+                                                                                                                                                                                                        
+Jonathan Toews                                                                                                                                                                                          
+Blackhawks                                                                                                                                                                                              
+Chicago                                                                                                                                                                                                 
+Muscle Tear                                                                                                                                                                                             
+2014-03-14                                                                                                                                                                                              
+                                                                                                                                                                                                        
+Patrick Kane                                                                                                                                                                                            
+Blackhawks                                                                                                                                                                                              
+Chicago                                                                                                                                                                                                 
+DEATH                                                                                                                                                                                                   
+2014-10-25                                                                                                                                                                                              
+                                                                                                                                                                                                        
+
+6 rows selected.
+
+
+     AVAGE                                                                                                                                                                                              
+----------                                                                                                                                                                                              
+29.8333333                                                                                                                                                                                              
+
+
+TNAME                                                                                                                                                                                                   
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  COUNT(*)                                                                                                                                                                                              
+----------                                                                                                                                                                                              
+Rangers                                                                                                                                                                                                 
+         3                                                                                                                                                                                              
+                                                                                                                                                                                                        
+Bruins                                                                                                                                                                                                  
+         3                                                                                                                                                                                              
+                                                                                                                                                                                                        
+Maple Leafs                                                                                                                                                                                             
+         3                                                                                                                                                                                              
+                                                                                                                                                                                                        
+Blackhawks                                                                                                                                                                                              
+         3                                                                                                                                                                                              
+                                                                                                                                                                                                        
+Canadiens                                                                                                                                                                                               
+         3                                                                                                                                                                                              
+                                                                                                                                                                                                        
+Red Wings                                                                                                                                                                                               
+         3                                                                                                                                                                                              
+                                                                                                                                                                                                        
+
+6 rows selected.
+
+
+SSN                                                                                                                                                                                                     
+---------                                                                                                                                                                                               
+NAME                                                                                                                                                                                                    
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1935                                                                                                                                                                                                    
+Carey Price                                                                                                                                                                                             
+                                                                                                                                                                                                        
+2235                                                                                                                                                                                                    
+Corey Crawford                                                                                                                                                                                          
+                                                                                                                                                                                                        
+2745                                                                                                                                                                                                    
+P.K. Subban                                                                                                                                                                                             
+                                                                                                                                                                                                        
+2903                                                                                                                                                                                                    
+James Reimer                                                                                                                                                                                            
+                                                                                                                                                                                                        
+4529                                                                                                                                                                                                    
+Carl Hagelin                                                                                                                                                                                            
+                                                                                                                                                                                                        
+5673                                                                                                                                                                                                    
+Niklas Kronwall                                                                                                                                                                                         
+                                                                                                                                                                                                        
+6533                                                                                                                                                                                                    
+Dion Phaneuf                                                                                                                                                                                            
+                                                                                                                                                                                                        
+7254                                                                                                                                                                                                    
+Loui Eriksson                                                                                                                                                                                           
+                                                                                                                                                                                                        
+8213                                                                                                                                                                                                    
+Henrik Lundqvist                                                                                                                                                                                        
+                                                                                                                                                                                                        
+8356                                                                                                                                                                                                    
+Max Pacioretty                                                                                                                                                                                          
+                                                                                                                                                                                                        
+9112                                                                                                                                                                                                    
+James Van Riemsdyk                                                                                                                                                                                      
+                                                                                                                                                                                                        
+9875                                                                                                                                                                                                    
+Jimmy Howard                                                                                                                                                                                            
+                                                                                                                                                                                                        
+
+12 rows selected.
+
+
+SSN                                                                                                                                                                                                     
+---------                                                                                                                                                                                               
+NAME                                                                                                                                                                                                    
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+       AGE                                                                                                                                                                                              
+----------                                                                                                                                                                                              
+9112                                                                                                                                                                                                    
+James Van Riemsdyk                                                                                                                                                                                      
+        26                                                                                                                                                                                              
+                                                                                                                                                                                                        
+2745                                                                                                                                                                                                    
+P.K. Subban                                                                                                                                                                                             
+        26                                                                                                                                                                                              
+                                                                                                                                                                                                        
+4529                                                                                                                                                                                                    
+Carl Hagelin                                                                                                                                                                                            
+        27                                                                                                                                                                                              
+                                                                                                                                                                                                        
+2903                                                                                                                                                                                                    
+James Reimer                                                                                                                                                                                            
+        27                                                                                                                                                                                              
+                                                                                                                                                                                                        
+8499                                                                                                                                                                                                    
+Jonathan Toews                                                                                                                                                                                          
+        27                                                                                                                                                                                              
+                                                                                                                                                                                                        
+8356                                                                                                                                                                                                    
+Max Pacioretty                                                                                                                                                                                          
+        27                                                                                                                                                                                              
+                                                                                                                                                                                                        
+5681                                                                                                                                                                                                    
+Patrick Kane                                                                                                                                                                                            
+        27                                                                                                                                                                                              
+                                                                                                                                                                                                        
+1935                                                                                                                                                                                                    
+Carey Price                                                                                                                                                                                             
+        28                                                                                                                                                                                              
+                                                                                                                                                                                                        
+1726                                                                                                                                                                                                    
+Tuukka Rask                                                                                                                                                                                             
+        28                                                                                                                                                                                              
+                                                                                                                                                                                                        
+2235                                                                                                                                                                                                    
+Corey Crawford                                                                                                                                                                                          
+        30                                                                                                                                                                                              
+                                                                                                                                                                                                        
+6533                                                                                                                                                                                                    
+Dion Phaneuf                                                                                                                                                                                            
+        30                                                                                                                                                                                              
+                                                                                                                                                                                                        
+7254                                                                                                                                                                                                    
+Loui Eriksson                                                                                                                                                                                           
+        30                                                                                                                                                                                              
+                                                                                                                                                                                                        
+9875                                                                                                                                                                                                    
+Jimmy Howard                                                                                                                                                                                            
+        31                                                                                                                                                                                              
+                                                                                                                                                                                                        
+3333                                                                                                                                                                                                    
+Rick Nash                                                                                                                                                                                               
+        31                                                                                                                                                                                              
+                                                                                                                                                                                                        
+
+14 rows selected.
+
+
+NAME                                                                                                                                                                                                    
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SSN                                                                                                                                                                                                     
+---------                                                                                                                                                                                               
+Zdeno Chara                                                                                                                                                                                             
+1236                                                                                                                                                                                                    
+                                                                                                                                                                                                        
+Pavel Datsyuk                                                                                                                                                                                           
+1423                                                                                                                                                                                                    
+                                                                                                                                                                                                        
+Tuukka Rask                                                                                                                                                                                             
+1726                                                                                                                                                                                                    
+                                                                                                                                                                                                        
+Rick Nash                                                                                                                                                                                               
+3333                                                                                                                                                                                                    
+                                                                                                                                                                                                        
+Patrick Kane                                                                                                                                                                                            
+5681                                                                                                                                                                                                    
+                                                                                                                                                                                                        
+Jonathan Toews                                                                                                                                                                                          
+8499                                                                                                                                                                                                    
+                                                                                                                                                                                                        
+
+6 rows selected.
+
+
+NAME                                                                                                                                                                                                    
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+TEAMNAME                                                                                                                                                                                                
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Pavel Datsyuk                                                                                                                                                                                           
+Red Wings                                                                                                                                                                                               
+                                                                                                                                                                                                        
+Niklas Kronwall                                                                                                                                                                                         
+Red Wings                                                                                                                                                                                               
+                                                                                                                                                                                                        
+Jimmy Howard                                                                                                                                                                                            
+Red Wings                                                                                                                                                                                               
+                                                                                                                                                                                                        
+James Van Riemsdyk                                                                                                                                                                                      
+Maple Leafs                                                                                                                                                                                             
+                                                                                                                                                                                                        
+Dion Phaneuf                                                                                                                                                                                            
+Maple Leafs                                                                                                                                                                                             
+                                                                                                                                                                                                        
+James Reimer                                                                                                                                                                                            
+Maple Leafs                                                                                                                                                                                             
+                                                                                                                                                                                                        
+Patrick Kane                                                                                                                                                                                            
+Blackhawks                                                                                                                                                                                              
+                                                                                                                                                                                                        
+Jonathan Toews                                                                                                                                                                                          
+Blackhawks                                                                                                                                                                                              
+                                                                                                                                                                                                        
+Corey Crawford                                                                                                                                                                                          
+Blackhawks                                                                                                                                                                                              
+                                                                                                                                                                                                        
+
+9 rows selected.
+

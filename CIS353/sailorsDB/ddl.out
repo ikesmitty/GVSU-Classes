@@ -1,0 +1,155 @@
+SQL> /*
+SQL> Homework on SQL/DDL
+SQL> Author: Isaac Smith
+SQL> */
+SQL> --
+SQL> -- IMPORTANT: use the names IC1, IC2, etc. as given below.
+SQL> -- --------------------------------------------------------------------
+SQL> DROP TABLE Employee CASCADE CONSTRAINTS;
+
+Table dropped.
+
+SQL> DROP TABLE Dependent CASCADE CONSTRAINTS;
+
+Table dropped.
+
+SQL> --
+SQL> CREATE TABLE Employee
+  2  (
+  3  id INTEGER PRIMARY KEY,
+  4  name CHAR(10) NOT NULL,
+  5  rank CHAR(10) NOT NULL,
+  6  salary INTEGER NOT NULL,
+  7  /*
+  8  IC1: The rank is one of: 'DB guru', 'DB expert', or 'DB rookie'
+  9  */
+ 10  CONSTRAINT IC1 CHECK (rank in ('DB guru', 'DB expert', 'DB rookie')),
+ 11  /*
+ 12  IC2: The salary of a 'DB guru' is above 200.
+ 13  */
+ 14  CONSTRAINT IC2 CHECK((rank = 'DB guru' and salary > 200) or rank <> 'DB guru'),
+ 15  /*
+ 16  IC3: The salary of a 'DB expert' is between 80 and 220 (inclusive).
+ 17  */
+ 18  CONSTRAINT IC3 CHECK((rank = 'DB expert' and salary > 80 and salary < 220)or rank <> 'DB expert'),
+ 19  /*
+ 20  IC4: The salary of a 'DB rookie' is less than 100.
+ 21  */
+ 22  CONSTRAINT IC4 CHECK((rank = 'DB rookie' and salary < 100) or rank <> 'DB rookie')
+ 23  );
+
+Table created.
+
+SQL> --
+SQL> --
+SQL> CREATE TABLE Dependent
+  2  (
+  3  empID INTEGER,
+  4  dependentName CHAR(20) NOT NULL,
+  5  relationship CHAR(20) NOT NULL,
+  6  PRIMARY KEY (empID, dependentName),
+  7  /*
+  8  IC5: empID must refer to an employee in the company. Also:
+  9  if an employee is deleted then his/her dependents must be deleted.
+ 10  IMPORTANT: DO NOT declare this IC as DEFERRABLE.
+ 11  */
+ 12  CONSTRAINT IC5 FOREIGN KEY (empid)
+ 13  				     REFERENCES Employee(id)
+ 14  				     ON DELETE CASCADE
+ 15  );
+
+Table created.
+
+SQL> --
+SQL> -- ----------------------------------------------------------------
+SQL> -- TESTING THE SCHEMA
+SQL> -- ----------------------------------------------------------------
+SQL> INSERT INTO Employee VALUES (10, 'Gray', 'DB guru', 240);
+
+1 row created.
+
+SQL> INSERT INTO Employee VALUES (20, 'Garland', 'DB guru', 190);
+INSERT INTO Employee VALUES (20, 'Garland', 'DB guru', 190)
+*
+ERROR at line 1:
+ORA-02290: check constraint (SMITHI.IC2) violated 
+
+
+SQL> INSERT INTO Employee VALUES (30, 'Edison', 'DB expert', 210);
+
+1 row created.
+
+SQL> INSERT INTO Employee VALUES (40, 'Eckerd', 'DB expert', 70);
+INSERT INTO Employee VALUES (40, 'Eckerd', 'DB expert', 70)
+*
+ERROR at line 1:
+ORA-02290: check constraint (SMITHI.IC3) violated 
+
+
+SQL> INSERT INTO Employee VALUES (50, 'Roberts', 'DB rookie', 110);
+INSERT INTO Employee VALUES (50, 'Roberts', 'DB rookie', 110)
+*
+ERROR at line 1:
+ORA-02290: check constraint (SMITHI.IC4) violated 
+
+
+SQL> INSERT INTO Employee VALUES (60, 'Rush', 'DB rookie', 90);
+
+1 row created.
+
+SQL> SELECT * from Employee;
+
+        ID NAME       RANK           SALARY                                     
+---------- ---------- ---------- ----------                                     
+        10 Gray       DB guru           240                                     
+        30 Edison     DB expert         210                                     
+        60 Rush       DB rookie          90                                     
+
+SQL> -- ----------------------------------------------------------------
+SQL> INSERT INTO Dependent VALUES (10, 'Grace', 'daughter');
+
+1 row created.
+
+SQL> INSERT INTO Dependent VALUES (10, 'George', 'son');
+
+1 row created.
+
+SQL> INSERT INTO Dependent VALUES (60, 'Reba', 'daughter');
+
+1 row created.
+
+SQL> INSERT INTO Dependent VALUES (15, 'Dustin', 'son');
+INSERT INTO Dependent VALUES (15, 'Dustin', 'son')
+*
+ERROR at line 1:
+ORA-02291: integrity constraint (SMITHI.IC5) violated - parent key not found 
+
+
+SQL> SELECT * FROM Dependent;
+
+     EMPID DEPENDENTNAME        RELATIONSHIP                                    
+---------- -------------------- --------------------                            
+        10 Grace                daughter                                        
+        10 George               son                                             
+        60 Reba                 daughter                                        
+
+SQL> --
+SQL> DELETE FROM Employee WHERE id = 10;
+
+1 row deleted.
+
+SQL> SELECT * From Employee;
+
+        ID NAME       RANK           SALARY                                     
+---------- ---------- ---------- ----------                                     
+        30 Edison     DB expert         210                                     
+        60 Rush       DB rookie          90                                     
+
+SQL> SELECT * FROM Dependent;
+
+     EMPID DEPENDENTNAME        RELATIONSHIP                                    
+---------- -------------------- --------------------                            
+        60 Reba                 daughter                                        
+
+SQL> --
+SQL> SET ECHO OFF

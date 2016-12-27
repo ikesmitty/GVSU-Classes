@@ -1,0 +1,145 @@
+#> InputSetLoader: gvFormat.InputSetLoaderSimpleGVFormat
+
+###########################################################################
+#
+# Test for 16 bit ALU. Appended test given to us by Professor
+# Kurmas.
+#
+# Author: Aziz Abada, Jesse Greenert, (derived from test by Zachary Kurmas)
+# (C) 2007 Grand Valley State University
+#
+###########################################################################
+
+
+OUTPUT_SET_TYPE SHARED SimpleALUOutputSet
+
+NAMED_VALUE_LISTS
+  # The product of any two lowPositive or lowNegative values will not overflow
+  lowPositive SIGNED(16) [ 0, 1, 2, 3, 4, 5, 10, 15, 16, 17, 157, 2^7 - 1 ]
+  lowNegative SIGNED(16) [ -1, -2, -3, -4, 5, -10, -15, -16, -17, -192,  
+  		       	   -2^7 + 1 ]
+  allPositive SIGNED(16) [ lowPositive, 2^7, 2^7 + 1, 1381, 2^15 - 2, 2^15 - 1 ]
+  allNegative SIGNED(16) [ lowNegative, -2^7, -2^7 - 1, -1468,
+                           -2^15 + 2, -2^15 + 1 ]
+
+
+BEGIN lowPositive_noOverflow
+  INPUTS
+    InputA SIGNED(16)  lowPositive
+    InputB SIGNED(16) lowPositive
+    Op [0, 1, 2]
+  OUTPUTS
+    # Tell JLSCircuitTester to ignore value of Overflow output pin
+    Overflow EXCLUDE 
+
+BEGIN lowNegative_noOverflow
+  INPUTS
+    InputA SIGNED(16)  lowNegative
+    InputB SIGNED(16) lowNegative
+    Op [0, 1, 2]
+  OUTPUTS
+    # Tell JLSCircuitTester to ignore value of Overflow output pin
+    Overflow EXCLUDE 
+
+BEGIN allPositive_noOverflow
+  INPUTS
+    InputA SIGNED(16)  allPositive
+    InputB SIGNED(16) allPositive
+    Op [0, 1, 2]
+  OUTPUTS
+    # Tell JLSCircuitTester to ignore value of Overflow output pin
+    Overflow EXCLUDE 
+
+BEGIN allNegative_noOverflow
+  INPUTS
+    InputA SIGNED(16) allNegative
+    InputB SIGNED(16) allNegative
+    Op [0, 1, 2]
+  OUTPUTS
+    # Tell JLSCircuitTester to ignore value of Overflow output pin
+    Overflow EXCLUDE 
+
+# This will not overflow for add, but overflow for mult.  
+# Check that overflow shows up correctly.
+BEGIN basicOverflowTest_1
+  INPUTS
+	InputA SIGNED(16) 2^10
+	InputB SIGNED(16) 2^7
+	Op [0,2]
+
+BEGIN basicOverflowTest_2
+  INPUTS
+	InputA SIGNED(16) 2^14
+	InputB SIGNED(16) 2^12
+	Op [0,2]
+
+BEGIN basicOverflowTest_3
+  INPUTS
+	InputA SIGNED(16) -2^14
+	InputB SIGNED(16) -2^12
+	Op [0,2]
+BEGIN basicOverflowTest_4
+  INPUTS
+	InputA SIGNED(16) -2^14
+	InputB SIGNED(16)  2^12
+	Op [0,2]
+
+BEGIN addOverflowTest
+  INPUTS
+        InputA SIGNED(16) 2^14
+        InputB SIGNED(16) 2^6
+        Op [0,0]
+
+BEGIN addOverflowTest_1
+  INPUTS
+        InputA SIGNED(16) 2^14
+        InputB SIGNED(16) -2^6
+        Op [0,0]
+
+BEGIN subtractOverflowTest
+  INPUTS
+	InputA SIGNED(16) 2^14
+	InputB SIGNED(16) 2^6
+	Op [0,1]
+
+BEGIN subtractOverflowTest_2
+  INPUTS
+	InputA SIGNED(16) 2^6
+	InputB SIGNED(16) 2^14
+	Op [0,1]
+
+BEGIN allPositive_ignoreOverflow
+  INPUTS
+    InputA SIGNED(16)  [allPositive, allNegative]
+    InputB SIGNED(16) [allPositive, allNegative]
+    Op [0, 1, 2]
+  OUTPUTS
+    # Tell JLSCircuitTester to ignore value of Overflow output pin
+    Overflow EXCLUDE 
+
+BEGIN lowPositive_ignoreOverflow
+  INPUTS
+    InputA SIGNED(16)  [lowPositive, lowNegative]
+    InputB SIGNED(16) [lowPositive, lowNegative]
+    Op [0, 1, 2]
+  OUTPUTS
+    # Tell JLSCircuitTester to ignore value of Overflow output pin
+    Overflow EXCLUDE 
+
+BEGIN allPositive_ignoreOverflow_ln
+  INPUTS
+    InputA SIGNED(16)  [allPositive, lowNegative]
+    InputB SIGNED(16) [allPositive, lowNegative]
+    Op [0, 1, 2]
+  OUTPUTS
+    # Tell JLSCircuitTester to ignore value of Overflow output pin
+    Overflow EXCLUDE 
+
+BEGIN lowPositive_ignoreOverflow_an
+  INPUTS
+    InputA SIGNED(16)  [lowPositive, allNegative]
+    InputB SIGNED(16) [lowPositive, allNegative]
+    Op [0, 1, 2]
+  OUTPUTS
+    # Tell JLSCircuitTester to ignore value of Overflow output pin
+    Overflow EXCLUDE 

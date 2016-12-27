@@ -1,0 +1,268 @@
+#> InputSetLoader: gvFormat.InputSetLoaderSimpleGVFormat
+###########################################################################
+#
+# Test for 16 bit multiplier. Appended test given to us by Professor
+# Kurmas.
+#
+# Author: Aziz Abada, Jesse Greenert, (derived from test by Zachary Kurmas)
+# (C) 2007 Grand Valley State University
+#
+###########################################################################
+
+OUTPUT_SET_TYPE SHARED SignedHighLowMultiplierOutputSet
+
+
+NAMED_VALUE_LISTS
+  # The product of any two lowPositive or lowNegative values will not overflow
+  allZeros SIGNED(16) [ 0, 0, 0 ]
+  negativeOne SIGNED(16) [ -1, -1, -1 ]
+  positiveOne SIGNED(16) [ 1, 1, 1 ]
+  lowPositive SIGNED(16) [ 0, 1, 0x55, 0x5C, 2^7-1 ]
+  lowNegative SIGNED(16) [ -2^7 + 1, -0x55, - 1 ]
+  allPositive SIGNED(16) [ lowPositive, 0x5555, 2^15 - 1 ]
+  allNegative SIGNED(16) [ lowNegative, -2^15 + 1, -0x5555 ]
+  highPositive SIGNED(16) [allPositive, 0x5555, 2^12 - 1 ]
+  highNegative SIGNED(16) [allNegative, -2^12 + 1, -0x5555 ]
+
+#########################
+#
+# positive, no overflow
+#
+#########################
+
+BEGIN positive_noOverflow1
+  INPUTS
+    InputA SIGNED(16) lowPositive
+    InputB SIGNED(16) lowPositive
+  OUTPUTS
+    # Tell JLSCircuitTester to ignore value of Overflow output pin
+    Overflow EXCLUDE 
+
+# Multiply some numbers above 2^8 that won't overflow
+BEGIN positive_noOverflow2
+  INPUTS
+    InputA SIGNED(16) [2^14 - 1, 2^14 - 7] 
+    InputB SIGNED(16) [0, 1, 2, 3, 6, 7]
+  OUTPUTS
+    # Tell JLSCircuitTester to ignore value of Overflow output pin
+    Overflow EXCLUDE 
+
+
+###########################
+#
+# all numbers, no overflow
+#
+###########################
+
+BEGIN all_noOverflow1
+  INPUTS
+    InputA SIGNED(16) [lowPositive, lowNegative]
+    InputB SIGNED(16) [lowPositive, lowNegative]
+  OUTPUTS
+    # Tell JLSCircuitTester to ignore value of Overflow output pin
+    Overflow EXCLUDE 
+
+# Multiply some numbers above 2^8 that won't overflow
+BEGIN all_noOverflow2
+  INPUTS
+    InputA SIGNED(16) [2^14 - 1, 2^14 - 7, -2^14 + 1, -2^14 + 7]
+    InputB SIGNED(16) [0, 1, 2, 3, 6, 7, -1, -2, -3, -6, -7]
+  OUTPUTS
+    # Tell JLSCircuitTester to ignore value of Overflow output pin
+    Overflow EXCLUDE 
+
+###########################
+#
+# positive overflow
+#
+###########################
+
+BEGIN positive_overflow
+   INPUTS
+     InputA SIGNED(16) allPositive
+     InputB SIGNED(16) allPositive
+
+BEGIN negative_overflow_pn
+   INPUTS
+     InputA SIGNED(16) allPositive
+     InputB SIGNED(16) allNegative
+
+BEGIN negative_overflow_np
+   INPUTS
+     InputA SIGNED(16) allNegative
+     InputB SIGNED(16) allPositive
+
+BEGIN negative_overflow_nn
+   INPUTS
+     InputA SIGNED(16) allNegative
+     InputB SIGNED(16) allNegative
+
+BEGIN positiveOverflow1
+   INPUTS
+	InputA SIGNED(16) 21000
+        InputB SIGNED(16) 2
+   OUTPUTS
+        Overflow REQUIRE
+
+BEGIN positiveOverflow2
+   INPUTS
+	InputA SIGNED(16) 30000
+        InputB SIGNED(16) 2
+   OUTPUTS
+        Overflow REQUIRE
+
+#####################
+#
+#Multiply by Zero
+#
+#####################
+
+BEGIN multiplyZero_lowPositive
+   INPUTS
+     InputA SIGNED(16) lowPositive
+     InputB SIGNED(16) allZeros
+   OUTPUTS
+    Overflow EXCLUDE
+
+BEGIN multiplyZero_lowNegative
+   INPUTS
+     InputA SIGNED(16) lowNegative
+     InputB SIGNED(16) allZeros
+   OUTPUTS
+    Overflow EXCLUDE
+
+BEGIN multiplyZero_allPositive
+   INPUTS
+     InputA SIGNED(16) allPositive
+     InputB SIGNED(16) allZeros
+  OUTPUTS
+    Overflow EXCLUDE
+
+BEGIN multiplyZero_allNegative
+   INPUTS
+     InputA SIGNED(16) allNegative
+     InputB SIGNED(16) allZeros
+   OUTPUTS
+    Overflow EXCLUDE
+
+BEGIN multiplylowPositive_Zero
+   INPUTS
+     InputA SIGNED(16) allZeros
+     InputB SIGNED(16) lowPositive
+   OUTPUTS
+    Overflow EXCLUDE
+
+BEGIN multiplylowNegative_Zero
+   INPUTS
+     InputA SIGNED(16) allZeros
+     InputB SIGNED(16) lowNegative
+   OUTPUTS
+    Overflow EXCLUDE
+
+BEGIN multiplyallPositive_Zero
+   INPUTS
+     InputA SIGNED(16) allZeros
+     InputB SIGNED(16) allPositive
+   OUTPUTS
+    Overflow EXCLUDE
+
+BEGIN multiplyallNegative_Zero
+   INPUTS
+     InputA SIGNED(16) allZeros
+     InputB SIGNED(16) allNegative
+   OUTPUTS
+    Overflow EXCLUDE
+
+#################################
+#
+#Multiply by Negative One
+#
+#################################
+
+BEGIN multiplylowPositive_negativeOne
+  INPUTS
+    InputA SIGNED(16) negativeOne
+    InputB SIGNED(16) lowPositive
+  OUTPUTS
+    Overflow EXCLUDE
+
+BEGIN multiplylowNegative_negativeOne
+  INPUTS
+    InputA SIGNED(16) negativeOne
+    InputB SIGNED(16) lowNegative
+  OUTPUTS
+    Overflow EXCLUDE
+
+BEGIN multiplyallPositive_negativeOne
+  INPUTS
+    InputA SIGNED(16) negativeOne
+    InputB SIGNED(16) allPositive
+  OUTPUTS
+    Overflow EXCLUDE
+
+BEGIN multiplyallNegative_negativeOne
+  INPUTS
+    InputA SIGNED(16) negativeOne
+    InputB SIGNED(16) allNegative
+  OUTPUTS
+    Overflow EXCLUDE
+
+#################################
+#
+#Multiply by Negative One
+#
+#################################
+
+BEGIN multiplylowPositive_positiveOne
+  INPUTS
+    InputA SIGNED(16) positiveOne
+    InputB SIGNED(16) lowPositive
+  OUTPUTS
+    Overflow EXCLUDE
+
+BEGIN multiplylowNegative_positiveOne
+  INPUTS
+    InputA SIGNED(16) positiveOne
+    InputB SIGNED(16) lowNegative
+  OUTPUTS
+    Overflow EXCLUDE
+
+BEGIN multiplyallPositive_positiveOne
+  INPUTS
+    InputA SIGNED(16) positiveOne
+    InputB SIGNED(16) allPositive
+  OUTPUTS
+    Overflow EXCLUDE
+
+BEGIN multiplyallNegative_positiveOne
+  INPUTS
+    InputA SIGNED(16) positiveOne
+    InputB SIGNED(16) allNegative
+  OUTPUTS
+    Overflow EXCLUDE
+
+###################################
+#
+#HighPositive Overflow
+#
+###################################
+
+BEGIN positive_overflow
+   INPUTS
+     InputA SIGNED(16) highPositive
+     InputB SIGNED(16) highPositive
+
+BEGIN negative_overflow_pn
+   INPUTS
+     InputA SIGNED(16) highPositive
+     InputB SIGNED(16) highNegative
+
+BEGIN negative_overflow_np
+   INPUTS
+     InputA SIGNED(16) highNegative
+     InputB SIGNED(16) highPositive
+
+BEGIN negative_overflow_nn
+   INPUTS
+     InputA SIGNED(16) highNegative
+     InputB SIGNED(16) highNegative
